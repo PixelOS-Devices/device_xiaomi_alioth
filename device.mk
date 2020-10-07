@@ -215,7 +215,11 @@ PRODUCT_COPY_FILES += \
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
+    XiaomiDoze \
     XiaomiParts
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/doze/privapp-permissions-doze.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-doze.xml
 
 # Display
 PRODUCT_PACKAGES += \
