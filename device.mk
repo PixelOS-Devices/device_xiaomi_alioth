@@ -18,6 +18,11 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-pixel
 
+PRODUCT_PACKAGES += \
+    SettingsProviderM2012K11AC \
+    SettingsProviderM2012K11AG \
+    SettingsProviderM2012K11AI
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
