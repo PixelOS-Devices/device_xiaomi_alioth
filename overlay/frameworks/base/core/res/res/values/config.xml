@@ -191,6 +191,9 @@
         <item>500</item>
     </integer-array>
 
+    <!-- Does the device have a notification led -->
+    <bool name="config_hasNotificationLed">false</bool>
+
     <!-- Array of light sensor lux values to define our levels for auto backlight brightness support.
         The N entries of this array define N + 1 control points as follows:
         (1-based arrays)
