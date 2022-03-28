@@ -35,7 +35,7 @@ static const variant_info_t alioth_global_info = {
     .nfc = true,
 };
 
-static const variant_info_t alioth_global_info = {
+static const variant_info_t alioth_eea_info = {
     .hwc_value = "EEA",
     .sku_value = "",
 
