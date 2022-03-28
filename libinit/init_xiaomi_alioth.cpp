@@ -35,6 +35,19 @@ static const variant_info_t alioth_global_info = {
     .nfc = true,
 };
 
+static const variant_info_t alioth_global_info = {
+    .hwc_value = "EEA",
+    .sku_value = "",
+
+    .brand = "POCO",
+    .device = "alioth_eea",
+    .marketname = "POCO F3",
+    .model = "M2012K11AG",
+    .build_fingerprint = "POCO/alioth_eea/alioth:12/SKQ1.211006.001/V13.0.3.0.SKHEUXM:user/release-keys",
+
+    .nfc = true,
+};
+
 static const variant_info_t alioth_info = {
     .hwc_value = "",
     .sku_value = "",
