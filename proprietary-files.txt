@@ -365,8 +365,12 @@ vendor/lib64/libmulticam_image_optical_zoom.so
 vendor/lib64/libmulticam_optical_zoom_control.so
 vendor/lib64/libmulticam_video_optical_zoom.so
 
-# Display-calibration
-vendor/etc/qdcm_calib_data_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml
+# Display-calibration from HelluvaOS
+vendor/etc/displayconfig/display_id_4630946736638489729.xml|87012764aa46293bd72b25d6a87ea9b1b8f74d6f
+vendor/etc/ltm_config_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml|604244bcfa2dd8fa3f7852349efa15c299987c60
+vendor/etc/mdss_dsi_k11a_38_08_0a_dsc_cmd_mi.xml|c04a0e3f1581e209bf3bee5a61690339
+vendor/etc/qdcm_calib_data_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml|0fb211bd5e5d5152e5f708c50054ce261e5ea061
+vendor/etc/tunings.txt|ccca05839eedc6cc771c23230ad4b8be
 
 # Fingerprint
 vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so
