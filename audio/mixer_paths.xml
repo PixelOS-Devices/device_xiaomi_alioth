@@ -2823,8 +2823,8 @@
     <path name="ultrasound-proximity">
         <ctl name="Ultrasound Enable" value="On" />
         <ctl name="Ultrasound Mode" value="725" />
-        <!--ctl name="Ultrasound Debug Mode" value="1" /-->
-        <!--ctl name="Ultrasound Log Level" value="7" /-->
+        <ctl name="Ultrasound Debug Mode" value="0" />
+        <ctl name="Ultrasound Log Level" value="0" />
     </path>
 
     <path name="ultrasound-proximity-output">
