@@ -9,6 +9,9 @@
 
 #include "vendor_init.h"
 
+#define DESCRIPTION "raven-user 12 SP2A.220505.002 8353555 release-keys"
+#define FINGERPRINT "google/raven/raven:12/SP2A.220505.002/8353555:user/release-keys"
+
 static const variant_info_t aliothin_info = {
     .hwc_value = "INDIA",
     .sku_value = "",
@@ -17,7 +20,8 @@ static const variant_info_t aliothin_info = {
     .device = "aliothin",
     .marketname = "Mi 11X",
     .model = "M2012K11AI",
-    .build_fingerprint = "Mi/aliothin/aliothin:12/RKQ1.200826.002/V13.0.6.0.SKHMIXM:user/release-keys",
+    .build_description = DESCRIPTION,
+    .build_fingerprint = FINGERPRINT,
 
     .nfc = false,
 };
@@ -30,7 +34,8 @@ static const variant_info_t alioth_global_info = {
     .device = "alioth",
     .marketname = "POCO F3",
     .model = "M2012K11AG",
-    .build_fingerprint = "POCO/alioth_global/alioth:12/RKQ1.200826.002/V13.0.6.0.SKHMIXM:user/release-keys",
+    .build_description = DESCRIPTION,
+    .build_fingerprint = FINGERPRINT,
 
     .nfc = true,
 };
@@ -43,7 +48,8 @@ static const variant_info_t alioth_info = {
     .device = "alioth",
     .marketname = "K40",
     .model = "M2012K11AC",
-    .build_fingerprint = "Redmi/alioth_global/alioth:12/RKQ1.200826.002/V13.0.6.0.SKHMIXM:user/release-keys",
+    .build_description = DESCRIPTION,
+    .build_fingerprint = FINGERPRINT,
 
     .nfc = true,
 };
