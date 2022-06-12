@@ -41,7 +41,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit Gcam BSG
-$(call inherit-product, vendor/GcamBSG/GcamBSG-vendor.mk)   
+$(call inherit-product-if-exists, vendor/GoogleCamera/config.mk) 
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/alioth/alioth-vendor.mk)
