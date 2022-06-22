@@ -822,6 +822,9 @@ vendor/etc/xtwifi.conf
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
+# IFAA service
+-vendor/app/IFAAService/IFAAService.apk
+
 # IMS
 system_ext/lib64/lib-imsvideocodec.so
 system_ext/lib64/lib-imsvt.so
@@ -972,6 +975,9 @@ vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so
 
 # NVRAM
 vendor/bin/nv_mac
+
+# Mlipay service
+-vendor/app/MipayService/MipayService.apk
 
 # OMX
 vendor/lib/libAlacSwDec.so
