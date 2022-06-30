@@ -374,6 +374,10 @@ PRODUCT_PACKAGES += \
     Tag \
     android.hardware.secure_element@1.2.vendor
 
+# NFC (Configs)
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/nfc/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/android.hardware.nfc.ese.xml \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/android.hardware.nfc.hce.xml \
