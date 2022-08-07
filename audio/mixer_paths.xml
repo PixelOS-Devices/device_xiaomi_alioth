@@ -369,7 +369,6 @@
     <ctl name="ADC2_MIXER Switch" value="0" />
     <ctl name="ADC3_MIXER Switch" value="0" />
     <ctl name="ADC4_MIXER Switch" value="1" />
-    <ctl name="ADC2 MUX" value="ZERO" />
     <ctl name="DEC0_BCS Switch" value="0" />
     <ctl name="TX_AIF1_CAP Mixer DEC0" value="0" />
     <ctl name="TX_AIF1_CAP Mixer DEC1" value="0" />
@@ -641,6 +640,21 @@
 
     <path name="echo-reference bt-sco-swb">
         <path name="echo-reference bt-sco" />
+    </path>
+
+    <path name="echo-reference-voip-low-latency">
+        <ctl name="AUDIO_REF_EC_UL8 MUX" value="WSA_CDC_DMA_RX_0" />
+        <ctl name="EC Reference Channels" value="Two"/>
+    </path>
+
+    <path name="echo-reference-voip-low-latency handset">
+        <ctl name="AUDIO_REF_EC_UL8 MUX" value="WSA_CDC_DMA_RX_0" />
+        <ctl name="EC Reference Channels" value="One"/>
+    </path>
+
+    <path name="echo-reference-voip-low-latency headphones">
+        <ctl name="AUDIO_REF_EC_UL8 MUX" value="WSA_CDC_DMA_RX_0" />
+        <ctl name="EC Reference Channels" value="Two"/>
     </path>
 
     <path name="echo-reference-voip">
@@ -1985,6 +1999,10 @@
         <path name="audio-record-compress2 bt-sco" />
     </path>
 
+    <path name="audio-record-compress2 bt-sco-wb">
+        <ctl name="MultiMedia17 Mixer SLIM_7_TX" value="1" />
+    </path>
+
     <path name="audio-record-compress2 bt-sco-swb">
         <path name="audio-record-compress2 bt-sco" />
     </path>
@@ -2530,6 +2548,10 @@
     </path>
 
     <!-- VoIP Tx settings -->
+    <path name="audio-record-voip-low-latency">
+        <ctl name="MultiMedia8 Mixer TX_CDC_DMA_TX_3" value="1" />
+    </path>
+
     <path name="audio-record-voip">
         <ctl name="MultiMedia10 Mixer TX_CDC_DMA_TX_3" value="1" />
     </path>
@@ -2851,8 +2873,8 @@
     <path name="ultrasound-proximity">
         <ctl name="Ultrasound Enable" value="On" />
         <ctl name="Ultrasound Mode" value="725" />
-        <ctl name="Ultrasound Debug Mode" value="0" />
-        <ctl name="Ultrasound Log Level" value="0" />
+        <!--ctl name="Ultrasound Debug Mode" value="1" /-->
+        <!--ctl name="Ultrasound Log Level" value="7" /-->
     </path>
 
     <path name="ultrasound-proximity-output">
@@ -3842,6 +3864,11 @@
 
     <path name="audio-ull-playback speaker-safe-and-bt-a2dp">
         <path name="audio-ull-playback bt-a2dp" />
+        <path name="audio-ull-playback" />
+    </path>
+
+    <path name="audio-ull-playback speaker-and-usb-headphones">
+        <path name="audio-ull-playback usb-headphones" />
         <path name="audio-ull-playback" />
     </path>
 
