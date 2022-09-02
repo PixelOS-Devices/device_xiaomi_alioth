@@ -9,5 +9,4 @@
     <string name="auto_hbm_threshold_title"></string>
     <string name="auto_hbm_threshold_summary">threshold (lux)</string>
     <string name="hbm_mode_warning">O uso prolongado do modo de alto brilho pode danificar sua tela</string>
-    <string name="auto_hbm_mode_warning">O HBM automático depende do brilho automático para ser ativado</string>
 </resources>

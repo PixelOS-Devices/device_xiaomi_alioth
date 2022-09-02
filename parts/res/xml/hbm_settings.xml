@@ -38,11 +38,6 @@
 
         <Preference
             android:icon="@drawable/ic_info_outline"
-            android:summary="@string/auto_hbm_mode_warning" 
-            android:persistent="false" />
-
-        <Preference
-            android:icon="@drawable/ic_info_outline"
             android:summary="@string/hbm_mode_warning" 
             android:persistent="false" />
     </PreferenceCategory>

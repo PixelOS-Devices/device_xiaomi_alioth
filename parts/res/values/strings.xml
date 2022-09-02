@@ -25,7 +25,6 @@
     <string name="auto_hbm_threshold_title"></string>
     <string name="auto_hbm_threshold_summary">threshold (lux)</string>
     <string name="hbm_mode_warning">Long time usage of High brightness mode may damage your display</string>
-    <string name="auto_hbm_mode_warning">Auto HBM relies on auto brightness to be enabled</string>
 
     <!-- Per-app refresh rate -->
     <string name="refresh_title">Per-app refresh rate</string>
