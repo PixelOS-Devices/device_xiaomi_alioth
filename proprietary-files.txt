@@ -589,9 +589,6 @@ system_ext/etc/sysconfig/config-com.dolby.daxappui.xml|fce084b5ea52db53d25a7bbf6
 system_ext/etc/sysconfig/config-com.dolby.daxservice.xml|cd1424d569038a393fccadb457c930c2
 system_ext/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml|3d8dfe8008f667cf2b3572983c08c3af
 
-# Display-calibration
-vendor/etc/qdcm_calib_data_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml
-
 # Display
 vendor/lib/libdpps.so
 vendor/lib64/libdpps.so
@@ -612,6 +609,13 @@ vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
+
+# Display (Configs)
+vendor/etc/display/advanced_sf_offsets.xml
+vendor/etc/default.lm
+vendor/etc/ltm_config_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml
+vendor/etc/mdss_dsi_k11a_38_08_0a_dsc_cmd_mi.xml
+vendor/etc/tunings.txt
 
 # Display (Postprocessing)
 vendor/bin/hw/vendor.display.color@1.0-service
