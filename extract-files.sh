@@ -13,7 +13,7 @@ function blob_fixup() {
 # Mifare Tag implementation
 # 0: General implementation
 # 1: Legacy implementation
-LEGACY_MIFARE_READER=1
+LEGACY_MIFARE_READER=0
 EOF
             ;;
         vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
