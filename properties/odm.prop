@@ -1,2 +1,5 @@
+# Display
+debug.sf.disable_client_composition_cache=0
+
 # Fwk detect
 ro.vendor.qti.va_odm.support=1
