@@ -54,7 +54,6 @@ public class AutoHBMService extends Service {
             FileUtils.writeLine(BACKLIGHT, "2047");
         } else {
             FileUtils.writeLine(HBM, "0xF0000");
-            FileUtils.writeLine(BACKLIGHT, "2047");
         }
 
     }
