@@ -861,12 +861,12 @@
         <item>"/vendor/lib64/egl/libGLESv1_CM_adreno.so"</item>
         <item>"/vendor/lib64/egl/libGLESv2_adreno.so"</item>
         <item>"/vendor/lib64/hw/vulkan.adreno.so"</item>
-        <item>"/vendor/lib64/libCB.so"</item>
+        <item>"/vendor/lib64/libipebpsstriping170.so"</item>
         <item>"/vendor/lib64/libOpenCL.so"</item>
         <item>"/vendor/lib64/libadreno_app_profiles.so"</item>
         <item>"/vendor/lib64/libadreno_utils.so"</item>
         <item>"/vendor/lib64/libgpudataproducer.so"</item>
-        <item>"/vendor/lib64/libgsl.so"</item>
+        <item>"/vendor/lib64/libllvm-qgl.so"</item>
         <item>"/vendor/lib64/libkcl.so"</item>
         <item>"/vendor/lib64/libkernelmanager.so"</item>
         <item>"/vendor/lib64/libllvm-glnext.so"</item>
