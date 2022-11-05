@@ -133,6 +133,7 @@ ro.vendor.audio.soundtrigger.xatx.gmm.user.level=40
 ro.vendor.audio.soundtrigger.xatx.vop.level=-10
 ro.vendor.audio.spk.clean=true
 ro.vendor.audio.spk.stereo=true
+ro.vendor.audio.support.sound.id=true
 ro.vendor.audio.us.type=mius
 ro.vendor.audio.zoom.support=true
 ro.vendor.audio.zoom.type=1
