@@ -193,32 +193,24 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 ro.vendor.display.paneltype=2
 vendor.display.defer_fps_frame_count=2
 
-# Dolby
-ro.vendor.dolby.dax.version=DAX3_3.6.1.6_r1
-vendor.audio.dolby.ds2.enabled=true
-vendor.audio.dolby.ds2.hardbypass=false
-
-# Dolby-Miui
-ro.vendor.df.effect.conflict=1
-ro.audio.monitorRotation=true
-ro.vendor.audio.dolby.dax.support=true
-persist.vendor.audio.delta.refresh=true
-ro.vendor.audio.dolby.surround.enable=true
-
-# SoundTrigger-Miui
-ro.vendor.audio.miui.karaoke.show=false
-ro.vendor.audio.miui.karaoke.tencent.show=false
-
-# MiSound
-persist.vendor.audio.misound.disable=true
-ro.vendor.audio.misound.bluetooth.enable=true
-
 # Display Refresh Rate
 ro.surface_flinger.set_idle_timer_ms?=4000
 ro.surface_flinger.set_touch_timer_ms?=4000
 ro.surface_flinger.set_display_power_timer_ms?=1000
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 vendor.display.defer_fps_frame_count?=2
+
+# Dolby
+ro.vendor.dolby.dax.version=DAX3_3.6.1.6_r1
+vendor.audio.dolby.ds2.enabled=true
+vendor.audio.dolby.ds2.hardbypass=false
+
+# Dolby (MIUI)
+ro.vendor.df.effect.conflict=1
+ro.audio.monitorRotation=true
+ro.vendor.audio.dolby.dax.support=true
+persist.vendor.audio.delta.refresh=true
+ro.vendor.audio.dolby.surround.enable=true
 
 # DRM
 drm.service.enabled=true
@@ -255,18 +247,22 @@ ro.hardware.vulkan=adreno
 ro.opengles.version=196610
 vendor.gralloc.disable_ubwc=0
 
-# Keystore
-ro.hardware.keystore_desede=true
-
 # IMS
 persist.vendor.ims.disableADBLogs=1
 persist.vendor.ims.disableDebugLogs=1
 persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.disableQXDMLogs=1
 
+# Keystore
+ro.hardware.keystore_desede=true
+
 # Media
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
+
+# MiSound
+persist.vendor.audio.misound.disable=true
+ro.vendor.audio.misound.bluetooth.enable=true
 
 # NFC
 ro.camera.notify_nfc=1
@@ -323,6 +319,13 @@ persist.vendor.sensors.sync_request=true
 
 # Shutdown
 sys.vendor.shutdown.waittime=500
+
+# SoundTrigger (MIUI)
+ro.vendor.audio.miui.karaoke.show=false
+ro.vendor.audio.miui.karaoke.tencent.show=false
+
+# Thermal data path
+vendor.sys.thermal.data.path=/data/vendor/thermal/
 
 # USB
 vendor.usb.diag.func.name=diag
