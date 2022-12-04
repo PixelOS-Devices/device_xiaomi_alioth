@@ -1,0 +1,13 @@
+<resources>
+    <!-- HBM settings -->
+    <string name="hbm_fragment_title">Modo de alto brilho</string>
+    <string name="hbm_fragment_summary">Configurações para HBM</string>
+    <string name="hbm_mode_title">HBM</string>
+    <string name="hbm_mode_summary">Aumenta o brilho máximo da tela</string>
+    <string name="auto_hbm_title">HBM automático</string>
+    <string name="auto_hbm_summary">Ativar o brilho máximo da tela com base na luz solar</string>
+    <string name="auto_hbm_threshold_title"></string>
+    <string name="auto_hbm_threshold_summary">threshold (lux)</string>
+    <string name="hbm_mode_warning">O uso prolongado do modo de alto brilho pode danificar sua tela</string>
+    <string name="auto_hbm_mode_warning">O HBM automático depende do brilho automático para ser ativado</string>
+</resources>
