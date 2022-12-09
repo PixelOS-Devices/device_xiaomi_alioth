@@ -1009,4 +1009,13 @@
          Possible values: 3, 3.1, 3.2, 4, 4.1, 4.2
     -->
     <string name="config_screenRecorderAVCProfileLevel" translatable="false">3.1</string>
+
+    <!-- The list of package IDs that are allowed to use aux cameras.
+         NOTE: If this list is empty then all apps will be able to use aux cameras. -->
+    <string-array name="config_cameraAuxPackageAllowList" translatable="false">
+    </string-array>
+
+    <!-- The list of package IDs that are not allowed to use aux cameras. -->
+    <string-array name="config_cameraAuxPackageExcludeList" translatable="false">
+    </string-array>
 </resources>
