@@ -1020,5 +1020,6 @@
         <item>org.telegram.messenger</item>
         <item>org.thunderdog.challegram</item>
         <item>tw.nekomimi.nekogram</item>
+        <item>us.zoom.videomeetings</item>
     </string-array>
 </resources>
