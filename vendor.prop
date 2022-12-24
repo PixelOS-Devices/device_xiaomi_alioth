@@ -29,6 +29,9 @@ ro.vendor.audio.us.type=mius
 ro.vendor.audio.zoom.support=true
 ro.vendor.audio.zoom.type=1
 
+# Audio Volume Steps (Media)
+ro.config.media_vol_steps=16
+
 # Display
 ro.vendor.display.paneltype=2
 vendor.display.defer_fps_frame_count=2
