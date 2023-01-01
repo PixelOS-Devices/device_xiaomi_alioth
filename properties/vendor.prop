@@ -178,6 +178,10 @@ vendor.display.qdcm.disable_factory_mode=1
 vendor.display.qdcm.mode_combine=1
 vendor.display.use_layer_ext=0
 vendor.display.use_smooth_motion=0
+vendor.display.enable_allow_idle_fallback=1
+vendor.display.skip_refresh_rate_change=1
+vendor.display.disable_idle_time_video=1
+vendor.display.disable_idle_time_hdr=1
 ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.use_color_management=true
@@ -237,6 +241,10 @@ ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
 vendor.gralloc.disable_ubwc=0
+debug.sf.disable_client_composition_cache=1
+debug.sf.layer_caching_active_layer_timeout_ms=1000
+ro.config.avoid_gfx_accel=true
+debug.sdm.support_writeback=0
 
 # IMS
 persist.vendor.ims.disableADBLogs=1
@@ -296,8 +304,8 @@ ro.telephony.default_network=33,33
 
 # Refresh Rate
 ro.surface_flinger.set_display_power_timer_ms=1000
-ro.surface_flinger.set_idle_timer_ms=1000
-ro.surface_flinger.set_touch_timer_ms=200
+ro.surface_flinger.set_idle_timer_ms=6000
+ro.surface_flinger.set_touch_timer_ms=6000
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 vendor.display.idle_time=1100
 
@@ -329,7 +337,7 @@ vendor.usb.use_ffs_mtp=0
 vendor.usb.use_gadget_hal=0
 
 # Volume steps
-ro.config.media_vol_steps=30
+ro.config.media_vol_steps=15
 ro.config.vc_call_vol_steps=11
 
 # WiFi
