@@ -57,6 +57,8 @@ ro.miui.notch=1
 
 # Netflix
 ro.netflix.bsp_rev=Q8250-19134-1
+ro.netflix.channel=497730f0-ad4b-11e7-95a4-c7ad113ce187
+ro.netflix.signup=1
 
 # Perf
 ro.vendor.qti.core_ctl_max_cpu=4
