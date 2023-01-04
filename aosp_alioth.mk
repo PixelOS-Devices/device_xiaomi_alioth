@@ -17,7 +17,7 @@ $(call inherit-product, device/xiaomi/alioth/device.mk)
 
 # Device Specific Flags
 TARGET_INCLUDE_WIFI_EXT := true
-TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Quick tap
 TARGET_SUPPORTS_QUICK_TAP := true
