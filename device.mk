@@ -88,11 +88,6 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
-# ART Debugging (Disable)
-USE_DEX2OAT_DEBUG := false
-PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
-PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
-
 # Background dexopt OTA
 PRODUCT_VENDOR_PROPERTIES += \
     pm.dexopt.ab-ota=speed-profile
