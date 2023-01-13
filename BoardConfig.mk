@@ -1,5 +1,6 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021-2022 The LineageOS Project
+# Copyright (C) 2022-2023 VoidUI Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -22,7 +23,7 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_alioth
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_alioth
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/xiaomi/alioth.config
+TARGET_KERNEL_CONFIG := alioth_defconfig
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := alioth,aliothin
