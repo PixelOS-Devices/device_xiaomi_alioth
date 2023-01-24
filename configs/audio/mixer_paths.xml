@@ -369,6 +369,7 @@
     <ctl name="ADC2_MIXER Switch" value="0" />
     <ctl name="ADC3_MIXER Switch" value="0" />
     <ctl name="ADC4_MIXER Switch" value="1" />
+    <ctl name="ADC2 MUX" value="ZERO" />
     <ctl name="DEC0_BCS Switch" value="0" />
     <ctl name="TX_AIF1_CAP Mixer DEC0" value="0" />
     <ctl name="TX_AIF1_CAP Mixer DEC1" value="0" />
@@ -640,21 +641,6 @@
 
     <path name="echo-reference bt-sco-swb">
         <path name="echo-reference bt-sco" />
-    </path>
-
-    <path name="echo-reference-voip-low-latency">
-        <ctl name="AUDIO_REF_EC_UL8 MUX" value="WSA_CDC_DMA_RX_0" />
-        <ctl name="EC Reference Channels" value="Two"/>
-    </path>
-
-    <path name="echo-reference-voip-low-latency handset">
-        <ctl name="AUDIO_REF_EC_UL8 MUX" value="WSA_CDC_DMA_RX_0" />
-        <ctl name="EC Reference Channels" value="One"/>
-    </path>
-
-    <path name="echo-reference-voip-low-latency headphones">
-        <ctl name="AUDIO_REF_EC_UL8 MUX" value="WSA_CDC_DMA_RX_0" />
-        <ctl name="EC Reference Channels" value="Two"/>
     </path>
 
     <path name="echo-reference-voip">
@@ -1999,10 +1985,6 @@
         <path name="audio-record-compress2 bt-sco" />
     </path>
 
-    <path name="audio-record-compress2 bt-sco-wb">
-        <ctl name="MultiMedia17 Mixer SLIM_7_TX" value="1" />
-    </path>
-
     <path name="audio-record-compress2 bt-sco-swb">
         <path name="audio-record-compress2 bt-sco" />
     </path>
@@ -2548,10 +2530,6 @@
     </path>
 
     <!-- VoIP Tx settings -->
-    <path name="audio-record-voip-low-latency">
-        <ctl name="MultiMedia8 Mixer TX_CDC_DMA_TX_3" value="1" />
-    </path>
-
     <path name="audio-record-voip">
         <ctl name="MultiMedia10 Mixer TX_CDC_DMA_TX_3" value="1" />
     </path>
@@ -2636,34 +2614,6 @@
         <ctl name="TERT_TDM_RX_0 Format" value="S24_LE" />
         <ctl name="TERT_TDM_RX_0 SampleRate" value="KHZ_48" />
         <ctl name="BRL PCM Source" value="DSP" />
-    </path>
-
-    <path name="speaker-tl">
-        <ctl name="TERT_TDM_RX_0 Channels" value="Two" />
-        <ctl name="TERT_TDM_RX_0 Format" value="S24_LE" />
-        <ctl name="TERT_TDM_RX_0 SampleRate" value="KHZ_48" />
-        <ctl name="TL PCM Source" value="DSP" />
-    </path>
-
-    <path name="speaker-tr">
-        <ctl name="TERT_TDM_RX_0 Channels" value="Two" />
-        <ctl name="TERT_TDM_RX_0 Format" value="S24_LE" />
-        <ctl name="TERT_TDM_RX_0 SampleRate" value="KHZ_48" />
-        <ctl name="TR PCM Source" value="DSP" />
-    </path>
-
-    <path name="speaker-br">
-        <ctl name="TERT_TDM_RX_0 Channels" value="Two" />
-        <ctl name="TERT_TDM_RX_0 Format" value="S24_LE" />
-        <ctl name="TERT_TDM_RX_0 SampleRate" value="KHZ_48" />
-        <ctl name="BR PCM Source" value="DSP" />
-    </path>
-
-    <path name="speaker-bl">
-        <ctl name="TERT_TDM_RX_0 Channels" value="Two" />
-        <ctl name="TERT_TDM_RX_0 Format" value="S24_LE" />
-        <ctl name="TERT_TDM_RX_0 SampleRate" value="KHZ_48" />
-        <ctl name="BL PCM Source" value="DSP" />
     </path>
 
     <path name="four-channel-speaker">
@@ -3316,9 +3266,6 @@
     <path name="afe-proxy">
     </path>
 
-    <path name="afe-proxy-record">
-    </path>
-
     <path name="display-port">
     </path>
 
@@ -3864,11 +3811,6 @@
 
     <path name="audio-ull-playback speaker-safe-and-bt-a2dp">
         <path name="audio-ull-playback bt-a2dp" />
-        <path name="audio-ull-playback" />
-    </path>
-
-    <path name="audio-ull-playback speaker-and-usb-headphones">
-        <path name="audio-ull-playback usb-headphones" />
         <path name="audio-ull-playback" />
     </path>
 
