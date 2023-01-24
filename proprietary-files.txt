@@ -112,40 +112,8 @@ vendor/lib/libresampler.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
 
 # Audio (FX modules)
-system_ext/etc/permissions/audiosphere.xml
-system_ext/framework/audiosphere.jar
-system_ext/lib/libav_ozodecoder.so:vendor/lib/libav_ozodecoder.so
-system_ext/lib/libav_ozoencoder.so:vendor/lib/libav_ozoencoder.so
-system_ext/lib/libozoaudio.so:vendor/lib/libozoaudio.so
-system_ext/lib/libozowidening.so:vendor/lib/libozowidening.so
-system_ext/lib/soundfx/libozoprocessing.so:vendor/lib/soundfx/libozoprocessing.so
-system_ext/lib64/libav_ozodecoder.so:vendor/lib64/libav_ozodecoder.so
-system_ext/lib64/libav_ozoencoder.so:vendor/lib64/libav_ozoencoder.so
-system_ext/lib64/libozoaudio.so:vendor/lib64/libozoaudio.so
-system_ext/lib64/libozowidening.so:vendor/lib64/libozowidening.so
-system_ext/lib64/soundfx/libozoprocessing.so:vendor/lib64/soundfx/libozoprocessing.so
-vendor/bin/audioflacapp
-vendor/bin/loadalgo
 vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libhwdap.so
-vendor/lib/soundfx/libmisoundfx.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
-vendor/lib/soundfx/libswdap.so
-vendor/lib/soundfx/libswgamedap.so
-vendor/lib/soundfx/libswvqe.so
-vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libhwdap.so
-vendor/lib64/soundfx/libmisoundfx.so
-vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcreverb.so
-vendor/lib64/soundfx/libqcvirt.so
-vendor/lib64/soundfx/libshoebox.so
-vendor/lib64/soundfx/libswdap.so
-vendor/lib64/soundfx/libswgamedap.so
-vendor/lib64/soundfx/libswvqe.so
 
 # Bluetooth
 system/lib/libldacBT_abr.so
@@ -568,35 +536,6 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 # Consumer IR
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.kona.so
 
-# Dolby
-system/lib/vendor.dolby.hardware.dms@2.0.so
-system/lib64/vendor.dolby.hardware.dms@2.0.so
-vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
-vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
-vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml
-vendor/lib/libdapparamstorage.so
-vendor/lib/libdeccfg.so
-vendor/lib/libstagefright_soft_ac4dec.so
-vendor/lib/libstagefright_soft_ddpdec.so
-vendor/lib/libstagefright_soft_qtiflacdec.so
-vendor/lib/libstagefrightdolby.so
-vendor/lib/vendor.dolby.hardware.dms@2.0.so
-vendor/lib64/libdapparamstorage.so
-vendor/lib64/libdeccfg.so
-vendor/lib64/libdlbdsservice.so
-vendor/lib64/libstagefright_soft_ac4dec.so
-vendor/lib64/libstagefright_soft_ddpdec.so
-vendor/lib64/libstagefrightdolby.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so
-
-# Dolby - from 9R OOS 11.2.8.8
-system_ext/etc/sysconfig/config-com.dolby.daxappui.xml|43c610f41061f49959ce07b26c60427b8767e535
-system_ext/etc/sysconfig/config-com.dolby.daxservice.xml|7690774632fe32269657fc1a2a0c941c7cd83f3d
-system_ext/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml|f647356bd3a4bb4174e873e4544c2921d51fd4d2
--system_ext/priv-app/DaxUI/DaxUI.apk|89e8ceabb19458b872eed0560a627eb2ff4c4dc4
--system_ext/priv-app/daxService/daxService.apk|ed1de719afc7181a7e896e0eeaf14edc00761c21
-
 # Display
 vendor/lib/libdpps.so
 vendor/lib64/libdpps.so
@@ -947,6 +886,7 @@ odm/etc/media_profiles_V1_0.xml
 vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_c2.xml
 vendor/etc/media_codecs_kona.xml
+vendor/etc/media_codecs_kona_vendor.xml
 vendor/etc/media_codecs_performance_c2.xml
 vendor/etc/media_codecs_performance_kona.xml
 vendor/etc/media_codecs_performance_kona_vendor.xml

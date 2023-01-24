@@ -387,9 +387,6 @@ on post-fs-data
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
 
-    #Create dir for dolby
-    mkdir /data/vendor/dolby 0770 media media
-
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
     group nfc
