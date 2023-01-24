@@ -990,6 +990,8 @@ vendor/lib64/unnhal-acc-hvx.so
 
 # NFC
 vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
+vendor/etc/libnfc-nci.conf|93b7f8b2101a8f55106b4ff8403f767aff16065f|4397ee58a7372a44dcf01c72f721466dc7630f94
+vendor/etc/libnfc-nxp.conf
 vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so
 
 # NVRAM
