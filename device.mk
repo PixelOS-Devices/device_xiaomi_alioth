@@ -198,6 +198,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libpiex_shim
 
+# Camera (Aperture)
+PRODUCT_PACKAGES += \
+    Aperture
+
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -373,6 +377,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 PRODUCT_PACKAGES += \
+    AliothApertureOverlay \
     AliothFrameworks \
     AliothSystemUI \
     SettingsProviderM2012K11AC \
