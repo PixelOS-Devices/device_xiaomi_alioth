@@ -4067,6 +4067,7 @@
         <int name="maxMessageSize" value="512000" />
     </carrier_config>
     <carrier_config mcc="250" mnc="99">
+        <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="config_wifi_disconnect_delay_for_vowifi_detach" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
     </carrier_config>
