@@ -139,6 +139,7 @@ ro.vendor.audio.zoom.support=true
 ro.vendor.audio.zoom.type=1
 
 # Bluetooth
+bluetooth.device.default_name=POCO F3
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 persist.bluetooth.a2dp_offload.disabled=false
 persist.sys.fflag.override.settings_bluetooth_hearing_aid=true

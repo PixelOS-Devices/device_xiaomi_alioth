@@ -58,7 +58,6 @@ void load_redmi_k40() {
     property_override("ro.boot.product.hardware.sku", "nfc");
     property_override("ro.product.model", "M2012K11AC");
     property_override("ro.product.brand", "Redmi");
-    property_override("ro.product.vendor.marketname", "Redmi K40");
     property_override("ro.product.vendor.manufacturer", "Xiaomi");
     property_override("ro.product.vendor.brand", "Redmi");
     property_override("ro.product.vendor.model", "M2012K11AC");
@@ -67,23 +66,18 @@ void load_redmi_k40() {
 }
 
 void load_poco_f3() {
-    property_override("bluetooth.device.default_name", "POCO F3");
     property_override("ro.boot.product.hardware.sku", "nfc");
     property_override("ro.product.model", "M2012K11AG");
     property_override("ro.product.brand", "POCO");
-    property_override("ro.product.vendor.marketname", "POCO F3");
     property_override("ro.product.vendor.manufacturer", "Xiaomi");
     property_override("ro.product.vendor.brand", "POCO");
     property_override("ro.product.vendor.model", "M2012K11AG");
-    property_override("ro.build.fingerprint", "POCO/alioth_global/alioth:12/SKQ1.211006.001/V13.0.6.0.SKHMIXM:user/release-keys");
-    property_override("ro.build.description", "alioth_global-user 12 SKQ1.211006.001 V13.0.6.0.SKHMIXM release-keys");
 }
 
 void load_xiaomi_mi11x() {
     property_override("bluetooth.device.default_name", "Mi 11X");
     property_override("ro.product.model", "M2012K11AI");
     property_override("ro.product.brand", "Mi");
-    property_override("ro.product.vendor.marketname", "Mi 11X");
     property_override("ro.product.vendor.manufacturer", "Xiaomi");
     property_override("ro.product.vendor.brand", "Mi");
     property_override("ro.product.vendor.model", "M2012K11AI");

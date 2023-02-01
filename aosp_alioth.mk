@@ -39,3 +39,9 @@ PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO F3
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="alioth_global-user 12 SKQ1.211006.001 V13.0.6.0.SKHMIXM release-keys"
+
+# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
+BUILD_FINGERPRINT := "POCO/alioth_global/alioth:12/SKQ1.211006.001/V13.0.6.0.SKHMIXM:user/release-keys"
