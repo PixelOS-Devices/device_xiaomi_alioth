@@ -11,3 +11,6 @@ allow system_app proc_pagetypeinfo:file r_file_perms;
 # Zram Access
 allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file r_file_perms;
+
+# Allow KProfiles to be adjusted by a system app
+allow system_app sysfs_kprofiles:file rw_file_perms;
