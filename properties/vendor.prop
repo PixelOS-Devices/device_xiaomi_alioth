@@ -314,6 +314,7 @@ sys.vendor.shutdown.waittime=500
 vendor.sys.thermal.data.path=/data/vendor/thermal/
 
 # USB
+vendor.usb.product_string=POCO F3
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl
 vendor.usb.qdss.inst.name=qdss_sw

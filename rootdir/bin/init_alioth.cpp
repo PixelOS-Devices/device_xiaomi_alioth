@@ -61,6 +61,7 @@ void load_redmi_k40() {
     property_override("ro.product.vendor.manufacturer", "Xiaomi");
     property_override("ro.product.vendor.brand", "Redmi");
     property_override("ro.product.vendor.model", "M2012K11AC");
+    property_override("vendor.usb.product_string", "Redmi K40");
     property_override("ro.build.fingerprint", "Redmi/alioth/alioth:12/SKQ1.211006.001/V13.0.9.0.SKHCNXM:user/release-keys");
     property_override("ro.build.description", "alioth-user 12 SKQ1.211006.001 V13.0.9.0.SKHCNXM release-keys");
 }
@@ -81,6 +82,7 @@ void load_xiaomi_mi11x() {
     property_override("ro.product.vendor.manufacturer", "Xiaomi");
     property_override("ro.product.vendor.brand", "Mi");
     property_override("ro.product.vendor.model", "M2012K11AI");
+    property_override("vendor.usb.product_string", "Mi 11X");
     property_override("ro.build.fingerprint", "Mi/aliothin/alioth:12/SKQ1.211006.001/V13.0.9.0.SKHINXM:user/release-keys");
     property_override("ro.build.description", "aliothin-user 12 SKQ1.211006.001 V13.0.9.0.SKHINXM release-keys");
 }
