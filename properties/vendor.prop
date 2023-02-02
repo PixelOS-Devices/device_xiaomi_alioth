@@ -194,6 +194,7 @@ ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
 ro.vendor.display.paneltype=2
 vendor.display.defer_fps_frame_count=2
+debug.sf.enable_egl_image_tracker=1
 
 # Display Refresh Rate
 ro.surface_flinger.set_idle_timer_ms?=4000
