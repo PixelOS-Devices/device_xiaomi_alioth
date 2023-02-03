@@ -123,7 +123,3 @@ genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon               
 genfscon sysfs /devices/platform/soc/88e0000.qcom,msm-eud/extcon                                                                                   u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,usb-pdphy@1700/extcon                 u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/extcon                      u:object_r:sysfs_extcon:s0
-
-# KProfiles
-genfscon sysfs /module/kprofiles/parameters/auto_kprofiles u:object_r:sysfs_kprofiles:s0
-genfscon sysfs /module/kprofiles/parameters/kp_mode u:object_r:sysfs_kprofiles:s0
