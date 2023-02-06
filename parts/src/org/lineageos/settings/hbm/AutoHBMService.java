@@ -34,17 +34,17 @@ public class AutoHBMService extends Service {
 
     public void activateLightSensorRead() {
         submit(() -> {
-        mSensorManager = (SensorManager) getApplicationContext().getSystemService(Context.SENSOR_SERVICE);
-        mLightSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
-        mSensorManager.registerListener(mSensorEventListener, mLightSensor, SensorManager.SENSOR_DELAY_NORMAL);
+            mSensorManager = (SensorManager) getApplicationContext().getSystemService(Context.SENSOR_SERVICE);
+            mLightSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
+            mSensorManager.registerListener(mSensorEventListener, mLightSensor, SensorManager.SENSOR_DELAY_NORMAL);
         });
     }
 
     public void deactivateLightSensorRead() {
         submit(() -> {
-        mSensorManager.unregisterListener(mSensorEventListener);
-        mAutoHBMActive = false;
-        enableHBM(false);
+            mSensorManager.unregisterListener(mSensorEventListener);
+            mAutoHBMActive = false;
+            enableHBM(false);
         });
     }
 
@@ -61,12 +61,14 @@ public class AutoHBMService extends Service {
         return FileUtils.getFileValueAsBoolean(HBM, false);
     }
 
-    SensorEventListener mSensorEventListener = new SensorEventListener() {
+    private static final int DELAY_MILLIS = 7000; // 7 seconds
+
+    private SensorEventListener mSensorEventListener = new SensorEventListener() {
         @Override
         public void onSensorChanged(SensorEvent event) {
             float lux = event.values[0];
             KeyguardManager km =
-                    (KeyguardManager) getSystemService(getApplicationContext().KEYGUARD_SERVICE);
+                (KeyguardManager) getSystemService(getApplicationContext().KEYGUARD_SERVICE);
             boolean keyguardShowing = km.inKeyguardRestrictedInputMode();
             float threshold = Float.parseFloat(mSharedPrefs.getString(HBMFragment.KEY_AUTO_HBM_THRESHOLD, "20000"));
             if (lux > threshold) {
@@ -78,7 +80,15 @@ public class AutoHBMService extends Service {
             if (lux < threshold) {
                 if (mAutoHBMActive) {
                     mAutoHBMActive = false;
-                    enableHBM(false);
+                    mExecutorService.submit(() -> {
+                        try {
+                            Thread.sleep(DELAY_MILLIS);
+                        } catch (InterruptedException e) {
+                        }
+                        if (lux < threshold) {
+                            enableHBM(false);
+                        }
+                    });
                 }
             }
         }
@@ -113,7 +123,7 @@ public class AutoHBMService extends Service {
         }
     }
 
-    private Future<?> submit(Runnable runnable) {
+    private Future < ? > submit(Runnable runnable) {
         return mExecutorService.submit(runnable);
     }
 
