@@ -5371,4 +5371,11 @@
     <carrier_config cust_region="jp_sb">
         <boolean name="config_show_prefer_4g" value="true" />
     </carrier_config>
+
+    <!-- Do not allow VoLTE on TIM Brazil -->
+    <carrier_config mcc="724" mnc="02,03,04">
+        <boolean name="carrier_volte_available_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+    </carrier_config>
+
 </carrier_config_list>
