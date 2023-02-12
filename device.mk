@@ -368,22 +368,22 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
 PRODUCT_PACKAGES += \
-    AliothApertureOverlay \
+    AOSPAliothFrameworks \
+    AOSPAliothSystemUI \
+    AliothAperture \
+    AliothCarrierConfig \
     AliothFrameworks \
+    AliothSettings \
     AliothSystemUI \
+    AliothTelephony \
     SettingsProviderM2012K11AC \
     SettingsProviderM2012K11AG \
     SettingsProviderM2012K11AI \
     WifiOverlayM2012K11AC \
     WifiOverlayM2012K11AG \
-    WifiOverlayM2012K11AI
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
+    WifiOverlayM2012K11AI \
+    WifiResTarget
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false

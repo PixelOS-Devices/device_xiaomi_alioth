@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2023 The Pixel Experience Project
+  ~ SPDX-License-Identifier: Apache-2.0
+ -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.wifi.resources.overlay.M2012K11AI">
+    <overlay
+        android:isStatic="true"
+        android:priority="800"
+        android:requiredSystemPropertyName="ro.boot.hwc"
+        android:requiredSystemPropertyValue="INDIA"
+        android:targetName="WifiCustomization"
+        android:targetPackage="com.android.wifi.resources" />
+</manifest>
