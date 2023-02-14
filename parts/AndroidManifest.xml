@@ -119,7 +119,7 @@
         
         <activity
             android:name=".hbm.HBMActivity"
-            android:label="@string/hbm_fragment_title"
+            android:label="@string/hbm_title"
             android:exported="false"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>

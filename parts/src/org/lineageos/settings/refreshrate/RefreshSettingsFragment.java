@@ -194,9 +194,9 @@ public class RefreshSettingsFragment extends PreferenceFragment
 
     private int getStateDrawable(int state) {
         switch (state) {
-            case RefreshUtils.STATE_STANDARD:
+            case RefreshUtils.STATE_MEDIUM:
                 return R.drawable.ic_refresh_60;
-            case RefreshUtils.STATE_EXTREME:
+            case RefreshUtils.STATE_MAXIMUM:
                 return R.drawable.ic_refresh_120;
             case RefreshUtils.STATE_DEFAULT:
             default:
@@ -228,8 +228,8 @@ public class RefreshSettingsFragment extends PreferenceFragment
         private final LayoutInflater inflater;
         private final int[] items = {
                 R.string.refresh_default,
-                R.string.refresh_standard,
-                R.string.refresh_extreme
+                R.string.refresh_medium,
+                R.string.refresh_maximum
         };
 
         private ModeAdapter(Context context) {
