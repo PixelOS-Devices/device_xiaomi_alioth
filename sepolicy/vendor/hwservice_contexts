@@ -11,3 +11,6 @@ vendor.nxp.nxpnfc::INxpNfc                                                      
 
 # Sensors
 vendor.xiaomi.hardware.citsensorservice::ICitSensorService                              u:object_r:vendor_hal_citsensorservice_xiaomi_hwservice:s0
+
+# Displayfeature
+vendor.xiaomi.hardware.displayfeature::IDisplayFeature                                  u:object_r:vendor_hal_displayfeature_xiaomi_hwservice:s0

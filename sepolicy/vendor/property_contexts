@@ -7,6 +7,35 @@ ro.vendor.camera.                               u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.res.fmq.size                   u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.req.fmq.size                   u:object_r:vendor_camera_prop:s0
 
+# Displayfeature
+ro.vendor.bcbc.enable                           u:object_r:vendor_displayfeature_prop:s0
+init.svc.vendor.displayfeature-hal-1-0          u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.eyecare.threshold                     u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.eyecare.level                         u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.hist.threshold                        u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.histogram.enable                      u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.whitepoint_calibration_enable         u:object_r:vendor_displayfeature_prop:s0
+vendor.displayfeature.entry.enable              u:object_r:vendor_displayfeature_prop:s0
+vendor.hbm.enable                               u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.df.extcolor.proc                 u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.max.brightness                   u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.xiaomi.bl.notify                      u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.xiaomi.bl.poll                        u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.df.color.temp                    u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.dc_backlight.enable              u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.fod.modified.dc_status           u:object_r:vendor_displayfeature_prop:s0
+ro.boot.oled_panel_id                           u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.fps.switch.default                    u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.dfps.level                       u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.smart_dfps.enable                     u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.power.dfps.level                 u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.video.dfps.level                 u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.video.dfps                       u:object_r:vendor_displayfeature_prop:s0
+vendor.displayfeature.thermal.dfps.level        u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.soft_backlight.enable                 u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.sre.enable                            u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.fod.110nit.lux.level                  u:object_r:vendor_displayfeature_prop:s0
+
 # Fingerprint
 persist.vendor.fpc.                             u:object_r:vendor_fingerprint_prop:s0
 persist.vendor.sys.fp.                          u:object_r:vendor_fingerprint_prop:s0

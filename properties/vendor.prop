@@ -196,6 +196,59 @@ ro.vendor.display.paneltype=2
 vendor.display.defer_fps_frame_count=2
 debug.sf.enable_egl_image_tracker=1
 
+# prop for amoled panel
+ro.vendor.display.type=oled
+
+# displayfeature use poll to monitor backlight brightness
+ro.vendor.xiaomi.bl.poll=true
+
+# White Point Calibration
+ro.vendor.whitepoint_calibration_enable=false
+
+# Property for display feature histogram/fod
+ro.vendor.histogram.enable=true
+ro.vendor.fod.dimlayer.enable=true
+
+# prop for displayfeture cabc/bcbc/dfps
+ro.vendor.cabc.enable=false
+ro.vendor.bcbc.enable=true
+ro.vendor.dfps.enable=false
+ro.vendor.smart_dfps.enable=true
+
+# prop of disable cloud control in video app
+ro.vendor.video.decode.only=false
+
+# for CTS fps
+ro.vendor.display.default_fps=60
+
+# prop for software 12bit bl
+ro.vendor.soft_backlight.enable=true
+
+# logd 8192 grade hbm support
+ro.vendor.hbm_backlight.enable=true
+
+# system property for displayfeature hidl
+sys.displayfeature_hidl=true
+
+# system prop for dc backlight
+persist.vendor.dc_backlight.enable=false
+persist.vendor.fod.modified.dc_status=false
+
+# property for dc backlight threshold
+persist.vendor.dc_backlight.threshold=440
+
+# property for display fps switch
+persist.vendor.dfps.level=60
+persist.vendor.power.dfps.level=0
+
+# Game color plus
+vendor.display.use_layer_ext=0
+
+# Display Feature
+vendor.hbm.enable=true
+vendor.display.qdcm.mode_combine=1
+persist.vendor.df.extcolor.proc=0
+
 # Display Refresh Rate
 ro.surface_flinger.set_idle_timer_ms?=4000
 ro.surface_flinger.set_touch_timer_ms?=4000
