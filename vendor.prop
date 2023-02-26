@@ -35,3 +35,6 @@ ro.config.media_vol_steps=16
 # Display
 ro.vendor.display.paneltype=2
 vendor.display.defer_fps_frame_count=2
+
+# TouchFeature
+ro.vendor.touchfeature.type=43
