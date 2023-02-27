@@ -190,12 +190,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
-PRODUCT_PACKAGES += \
-    libpiex_shim
-
 # Camera (Aperture)
 PRODUCT_PACKAGES += \
     Aperture
+
+# Camera (Shim)
+PRODUCT_PACKAGES += \
+    libpiex_shim
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -264,7 +265,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
-# GPS
+# GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1.vendor \
     android.hardware.gnss@2.1.vendor
@@ -512,7 +513,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
-# WiFi
+# Wi-Fi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     hostapd \

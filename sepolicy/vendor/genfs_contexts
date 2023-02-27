@@ -1,4 +1,4 @@
-# Swap
+# SWAP
 genfscon proc  /sys/vm/rswappiness                                                                  u:object_r:proc_swaps:s0
 
 # DSP

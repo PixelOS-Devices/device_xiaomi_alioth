@@ -1,3 +1,5 @@
+# KProfiles
 allow system_app sysfs_kprofiles:file rw_file_perms;
 
+# Mlipay
 hal_client_domain(system_app, hal_mlipay)

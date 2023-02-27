@@ -1,1 +1,2 @@
+# Mlipay
 type hal_mlipay_hwservice, hwservice_manager_type;

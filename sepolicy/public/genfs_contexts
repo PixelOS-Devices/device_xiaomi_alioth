@@ -1,2 +1,3 @@
+# KProfiles
 genfscon sysfs /module/kprofiles/parameters/auto_kprofiles u:object_r:sysfs_kprofiles:s0
 genfscon sysfs /module/kprofiles/parameters/kp_mode u:object_r:sysfs_kprofiles:s0
