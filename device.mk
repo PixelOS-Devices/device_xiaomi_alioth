@@ -25,6 +25,9 @@ PRODUCT_PACKAGES += \
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Call the MiuiCamera setup
+$(call inherit-product-if-exists, vendor/xiaomi/alioth-miuicamera/products/miuicamera.mk)
+
 # Camera
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/camera/camera_cnf.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_cnf.txt
