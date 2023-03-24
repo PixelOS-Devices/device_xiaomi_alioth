@@ -25,19 +25,31 @@ import android.util.Log;
 
 import androidx.annotation.Nullable;
 
+import org.lineageos.settings.hbm.HBMActivity;
 import org.lineageos.settings.refreshrate.RefreshActivity;
+import org.lineageos.settings.thermal.ThermalActivity;
 
 public class TileEntryActivity extends Activity {
     private static final String TAG = "TileEntryActivity";
+
+    private static final String HBM_TILE = "org.lineageos.settings.hbm.HBMModeTileService";
     private static final String REFRESH_TILE = "org.lineageos.settings.RefreshRateTileService";
+    private static final String THERMAL_TILE = "org.lineageos.settings.thermal.ThermalTileService";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ComponentName sourceClass = getIntent().getParcelableExtra(Intent.EXTRA_COMPONENT_NAME);
         switch (sourceClass.getClassName()) {
+            case HBM_TILE:
+                openActivitySafely(new Intent(this, HBMActivity.class));
+                break;
             case REFRESH_TILE:
                 openActivitySafely(new Intent(this, RefreshActivity.class));
+                break;
+            case THERMAL_TILE:
+                openActivitySafely(new Intent(this, ThermalActivity.class));
+                break;
             default:
                 finish();
                 break;
