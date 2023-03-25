@@ -15,7 +15,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Inherit from alioth device
 $(call inherit-product, device/xiaomi/alioth/device.mk)
 
-# Device Specific Flags
+# Device specific
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
@@ -24,12 +24,6 @@ TARGET_SUPPORTS_QUICK_TAP := true
 
 # Face unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
-
-# Live walpapers
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-
-# Call recording
-TARGET_SUPPORTS_CALL_RECORDING := true
 
 # Device identifier
 PRODUCT_NAME := aosp_alioth
