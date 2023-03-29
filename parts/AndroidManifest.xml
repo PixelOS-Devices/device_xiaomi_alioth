@@ -51,6 +51,7 @@
             android:name=".thermal.ThermalTileService"
             android:icon="@drawable/ic_thermal"
             android:label="@string/thermal_title"
+            android:exported="true"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action
