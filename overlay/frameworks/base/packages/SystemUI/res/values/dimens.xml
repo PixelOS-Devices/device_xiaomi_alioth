@@ -42,4 +42,7 @@
 
     <!-- Height of the status bar header bar when on Keyguard -->
     <dimen name="status_bar_header_height_keyguard">@dimen/navigation_side_padding</dimen>
+    
+    <!-- the padding on the top of the statusbar -->
+    <dimen name="status_bar_padding_top">7dp</dimen>
 </resources>
