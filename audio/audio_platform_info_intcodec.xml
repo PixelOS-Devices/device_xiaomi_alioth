@@ -85,7 +85,6 @@
         <usecase name="USECASE_AUDIO_PLAYBACK_AFE_PROXY" type="out" id="5"/>
         <usecase name="USECASE_AUDIO_RECORD_AFE_PROXY" type="in" id="6"/>
         <usecase name="USECASE_AUDIO_RECORD_LOW_LATENCY" type="in" id="13" />
-        <usecase name="USECASE_AUDIO_RECORD_VOIP_LOW_LATENCY" type="in" id="13" />
         <usecase name="USECASE_AUDIO_PLAYBACK_ULL" type="out" id="13" />
         <usecase name="USECASE_AUDIO_PLAYBACK_SILENCE" type="out" id="23" />
         <usecase name="USECASE_AUDIO_PLAYBACK_VOIP" type="out" id="12" />
@@ -187,7 +186,6 @@
         <device name="SND_DEVICE_OUT_VOICE_TTY_VCO_HEADPHONES" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_VOICE_TTY_VCO_HEADSET" backend="headset" interface="RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_HANDSET" backend="handset" interface="TERT_TDM_RX_0"/>
-        <device name="SND_DEVICE_OUT_VOICE_HAC_HANDSET" backend="handset" interface="TERT_TDM_RX_0"/>
         <device name="SND_DEVICE_OUT_ULTRASOUND" backend="handset" interface="TERT_TDM_RX_1"/>
         <device name="SND_DEVICE_OUT_SPEAKER" backend="speaker" interface="TERT_TDM_RX_0"/>
         <device name="SND_DEVICE_OUT_GAME_SPEAKER" backend="speaker" interface="TERT_TDM_RX_0"/>
