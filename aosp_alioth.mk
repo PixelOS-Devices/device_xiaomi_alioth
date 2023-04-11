@@ -26,6 +26,7 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_QUICK_TAP  := true
 TARGET_USES_MINI_GAPPS := false
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 # Inherit from alioth device
 $(call inherit-product, device/xiaomi/alioth/device.mk)
