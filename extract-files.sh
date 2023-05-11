@@ -5,6 +5,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+export DEVICE=alioth
+export DEVICE_COMMON=sm8250-common
+export VENDOR=xiaomi
+
 function blob_fixup() {
     case "${1}" in
         vendor/etc/libnfc-nci.conf)
@@ -35,9 +39,5 @@ if [ "${BASH_SOURCE[0]}" != "${0}" ]; then
 fi
 
 set -e
-
-export DEVICE=alioth
-export DEVICE_COMMON=sm8250-common
-export VENDOR=xiaomi
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
