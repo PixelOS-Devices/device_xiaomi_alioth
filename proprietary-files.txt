@@ -1,4 +1,4 @@
-# Unpinned blobs from alioth_global-user 12 RKQ1.200826.002 V13.0.3.0.RKHMIXM release-keys
+# Unpinned blobs from alioth_global-user 13 RKQ1.211001.001 V14.0.4.0.TKHMIXM release-keys
 
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
@@ -51,12 +51,19 @@ vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
 # Audio-Hardware
+system_ext/lib/vendor.qti.hardware.audiohalext@1.0.so
+system_ext/lib64/vendor.qti.hardware.audiohalext@1.0.so
+vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.kona.so
+vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
 vendor/lib/vndk/libxlog.so
 vendor/lib/liba2dpoffload.so
 vendor/lib/libaudio_log_utils.so
+vendor/lib/libaudioconfigstore.so
+vendor/lib/libaudiocloudctrl.so
 vendor/lib/libaudioroute_ext.so
 vendor/lib/libfcsam.so
+vendor/lib/libmmhardware.so
 vendor/lib/libresampler.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
 
@@ -456,6 +463,7 @@ vendor/etc/sensors/config/sns_rmd.json
 vendor/etc/sensors/config/sns_rotv.json
 vendor/etc/sensors/config/sns_sar_algo.json
 vendor/etc/sensors/config/sns_sar_algo_1.json
+vendor/etc/sensors/config/sns_screen_down.json
 vendor/etc/sensors/config/sns_smd.json
 vendor/etc/sensors/config/sns_tilt.json
 vendor/etc/sensors/config/sns_tilt_sw_disabled.json
@@ -463,6 +471,7 @@ vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/sx932x_0.json
 vendor/etc/sensors/config/sx932x_1.json
 vendor/etc/sensors/config/tcs3701.json
+vendor/etc/sensors/calibratedCheck.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/judge_calibrated.json
 vendor/etc/sensors/sensor_diag.cfg
@@ -495,6 +504,9 @@ vendor/etc/thermal-engine.conf
 vendor/etc/thermal-india-class0.conf
 vendor/etc/thermal-india-mgame.conf
 vendor/etc/thermal-india-normal.conf
+vendor/etc/thermal-india-per-class0.conf
+vendor/etc/thermal-india-per-normal.conf
+vendor/etc/thermal-india-per-video.conf
 vendor/etc/thermal-india-tgame.conf
 vendor/etc/thermal-india-video.conf
 vendor/etc/thermal-map-india.conf
@@ -503,6 +515,11 @@ vendor/etc/thermal-mgame.conf
 vendor/etc/thermal-navigation.conf
 vendor/etc/thermal-nolimits.conf
 vendor/etc/thermal-normal.conf
+vendor/etc/thermal-per-camera.conf
+vendor/etc/thermal-per-class0.conf
+vendor/etc/thermal-per-navigation.conf
+vendor/etc/thermal-per-normal.conf
+vendor/etc/thermal-per-video.conf
 vendor/etc/thermal-phone.conf
 vendor/etc/thermal-region-map.conf
 vendor/etc/thermal-tgame.conf
