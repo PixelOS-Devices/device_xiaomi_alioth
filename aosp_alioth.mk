@@ -18,7 +18,7 @@ $(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
 
 # Device Specific Flags
 TARGET_INCLUDE_WIFI_EXT := true
-TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Environment Flags
 TARGET_FACE_UNLOCK_SUPPORTED := true
