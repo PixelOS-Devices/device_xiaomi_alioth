@@ -16,14 +16,9 @@
 */
 -->
 <resources>
-    <dimen name="config_rounded_mask_size">156px</dimen>
-    <dimen name="config_rounded_mask_size_top">@dimen/config_rounded_mask_size</dimen>
-    <dimen name="config_rounded_mask_size_bottom">@dimen/config_rounded_mask_size</dimen>
-
     <!-- The padding on the side of the navigation bar. Must be greater than or equal to
          navigation_extra_key_width -->
     <dimen name="navigation_side_padding">80px</dimen>
-
     <!-- Location on the screen of the center of the fingerprint sensor. For devices with under
      display fingerprint sensors, this directly corresponds to the fingerprint sensor's location.
      For devices with sensors on the back of the device, this corresponds to the location on the
@@ -43,7 +38,4 @@
 
     <!-- Height of the status bar header bar when on Keyguard -->
     <dimen name="status_bar_header_height_keyguard">@dimen/navigation_side_padding</dimen>
-
-    <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">1px</dimen>
 </resources>
