@@ -32,4 +32,10 @@
          Do not read this dimen directly. Use {@link SystemBarUtils#getStatusBarHeight} instead.
          -->
     <dimen name="status_bar_height_landscape">28dp</dimen>
+
+    <!-- Maximum vertical offset of statusbar for burn-in protection -->
+    <dimen name="status_bar_offset_max_y">1.5dp</dimen>
+
+    <!-- for 20dp of padding at 2.75px/dp at default density -->
+    <dimen name="rounded_corner_content_padding">55px</dimen>
 </resources>

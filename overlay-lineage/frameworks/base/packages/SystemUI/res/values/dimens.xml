@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-     SPDX-FileCopyrightText: 2023 The LineageOS Project
-     SPDX-License-Identifier: Apache-2.0
--->
-<resources>
-    <!-- Maximum vertical offset of statusbar for burn-in protection -->
-    <dimen name="status_bar_offset_max_y">1.5dp</dimen>
-</resources>
