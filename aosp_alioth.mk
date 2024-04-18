@@ -14,6 +14,8 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Device Specific Flags
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_USES_MIUI_CAMERA := true
+TARGET_INCLUDES_MIUI_CAMERA := true
 
 # Environment Flags
 TARGET_FACE_UNLOCK_SUPPORTED := true
