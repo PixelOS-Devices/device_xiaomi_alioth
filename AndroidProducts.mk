@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_alioth.mk
+    $(LOCAL_DIR)/aosp_alioth.mk
